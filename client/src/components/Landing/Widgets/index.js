@@ -44,9 +44,9 @@ function Widgets() {
                             alt="171x180"
                             src="https://www.iconarchive.com/download/i86458/graphicloads/long-shadow-documents/document-filetype-pdf.ico" roundedCircle
                         />
-                        <h6 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '28px', color: 'rgb(49, 49, 49)'}}>Edit any PDF</h6>
+                        <h6 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '28px', color: 'rgb(49, 49, 49)'}}>Edit any Lesson</h6>
                         <Figure.Caption style={{color: 'rgb(49, 49, 49)'}}>
-                            Open up your PDF lessons and you have the ability to edit, annotate, and save.
+                            Open up your lessons and you have the ability to edit, annotate, and save.
                             </Figure.Caption>
                     </Figure>
                 </Col>

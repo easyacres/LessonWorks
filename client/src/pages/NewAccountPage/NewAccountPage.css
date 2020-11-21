@@ -1,24 +1,73 @@
-.form-control-signup{
-    border-radius: 100px;
-    padding: 15px;
-    border-width: thin;
-    border-color: grey;
-    font-size: 15px;
-    margin-left: 10px;
-    text-decoration: black
+#newAccount {
+  position: relative;
+  min-height: 120vh;
+  width: 100%;
+  display: flex;
+}
+#newAccount::before {
+  content: "";
+  background: url(https://www.icgroupinc.com/wp-content/uploads/2016/09/background-work.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 82%; 
+}
+#layer2 {
+  background-color: rgba(48, 48, 49, 0.589);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+#signup-container {
+  background-color: rgba(0, 0, 0, 0.356);
+  margin-top: 7%;
+  margin-bottom: 10%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 100%;
+  max-width: 600px;
+}
+.signup {
+  margin-top: 10%;
+  margin-right: 10%;
 }
 .label-control{
   display: inline-block;
-  width: 100px;
   text-align: right;
-  font-size: 20px;
+  font-size: 17px;
+  width: 140px;
+  color: white;
 }
-#signup-container {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  padding-bottom: 10px;
-  width: 100%;
-  max-width: 400px;
+.form-control-signup{
+    border-radius: 2px;
+    padding: 15px;
+    border-width: 0.3px;
+    border: none;
+    border-color: rgb(202, 202, 202);
+    font-size: 15px;
+    margin-left: 10px;
+    text-decoration: black;  
+}
+#new-account-btn {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 100px;
+  padding: 15px;
+  color: white;
+  background-color: rgba(88, 88, 88, 0.74);
+}
+#new-account-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(24, 24, 24);
+  
 }
 
 .mt-10 {

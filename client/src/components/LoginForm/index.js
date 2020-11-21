@@ -21,7 +21,7 @@ function LoginForm() {
                 <Router>
                     <div>
                         <Button variant="outline-light" id="signup-btn">
-                            <NavLink to="./newaccount" id="navlink">
+                            <NavLink href="/newaccount" to="./newaccount" id="navlink">
                                 Sign Up
                             </NavLink>
                         </Button>

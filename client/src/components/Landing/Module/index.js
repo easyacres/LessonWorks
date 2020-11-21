@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button, NavLink, Container, Image } from 'react-bootstrap'
+import { Row, Col, Button, NavLink, Container } from 'react-bootstrap'
 import "./Module.css";
 
 function Module() {
@@ -11,13 +11,11 @@ function Module() {
                 <div></div>
             </Col>
                 <Col xs={12} md={6} id="text-col">
-                    <h1 style={{fontWeight:'bold'}}>Access to Lesson Panning Right at Your Fingertips</h1>
-                    <p>All the lessons you need,
-                    convienient annotating made accessible,
-                    automated orginization, and more.
+                    <h1 style={{fontWeight:'bold'}}>Access to Lesson Planning Right at Your Fingertips</h1>
+                    <p>Lesson Planning is under-rated. We have now over-rated it by allowing users to lesson plan right in their hand.
                         </p>
                     <Button variant="outline-light" id="get-started-btn">
-                        <NavLink to="/newaccount" id="link-control">
+                        <NavLink href="/newaccount" id="link-control">
                             Get Started
                         </NavLink>
                     </Button>
