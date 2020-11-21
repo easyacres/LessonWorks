@@ -100,7 +100,7 @@ function AdminProfilePage() {
                 </Col>
 
                 <Col xs={12} md={4}>
-                    <h1 id="lessonTitle">Create Lesson </h1>
+                    <h1 id="lessonTitle">Create User </h1>
                     <br />
                     <Form>
                         <Input
