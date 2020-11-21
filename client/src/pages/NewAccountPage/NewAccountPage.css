@@ -1,0 +1,26 @@
+.form-control-signup{
+    border-radius: 100px;
+    padding: 15px;
+    border-width: thin;
+    border-color: grey;
+    font-size: 15px;
+    margin-left: 10px;
+    text-decoration: black
+}
+.label-control{
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-size: 20px;
+}
+#signup-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.mt-10 {
+  margin-top: 30px;
+}

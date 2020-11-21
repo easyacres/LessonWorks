@@ -1,0 +1,26 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(46, 46 ,46)
+}
+.foot {
+    font-weight: bold;
+    color: lightgray;
+    font-size: 25px;
+}
+p {
+    font-size: 15px;
+    color: rgb(143, 143, 143);
+    margin: 0px;
+}
+
+.subFooter{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 228px;
+}

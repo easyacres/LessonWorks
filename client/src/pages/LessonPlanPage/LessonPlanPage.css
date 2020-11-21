@@ -1,0 +1,9 @@
+#lesson {
+    height: 100%;
+    position: relative;
+    top: 0px;
+}
+#lesson-container {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}

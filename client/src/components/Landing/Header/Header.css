@@ -1,0 +1,26 @@
+#landing-container {
+    content: "";
+    background: url(./background.png);
+    background-size: cover;
+    min-height: 65vh;
+    height: 100%;
+    max-width: none;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 9%;
+    padding-left: 4%;
+    padding-bottom: 8%;
+}
+#btn-control {
+    border-radius: 100px;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 230, 0);
+}
+#link-control {
+    color: black;
+}
