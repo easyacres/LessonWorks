@@ -30,7 +30,7 @@ import React, { useState, useEffect } from "react";
 import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/Api";
 import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../../components/Grid";
+import { Col, Row, Container } from 'react-bootstrap';
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import PDFViewer from '../../components/PDFViewer/index';
@@ -93,14 +93,14 @@ function AdminProfilePage() {
     };
     
     return (
-        <Container id="teacher-container">
+        <div id="teacher-container" class="container">
             <Row>
-                <Col size="md-3">
+                <Col md={4}>
                     <ProfileCard />
                 </Col>
 
-                <Col size="md-4">
-                    <h2 id="lessonTitle">Create Your own lesson </h2>
+                <Col xs={12} md={4}>
+                    <h1 id="lessonTitle">Create User </h1>
                     <br />
                     <Form>
                         <Input
@@ -137,9 +137,9 @@ function AdminProfilePage() {
                         </FormBtn>
                     </Form>
                 </Col>
-                <Col size="md-4 sm-12">
+                <Col xs={12} md={4}>
             
-              <h1>Authorized Users</h1>
+              <h1 id="lessonTitle">Authorized Users</h1>
             
             {adminsmain.length ? (
               <List>
@@ -155,12 +155,12 @@ function AdminProfilePage() {
                 ))}
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+                <h6 style={{ color: 'grey', marginTop: '20px' }} >No Results to Display</h6>
               //  Terniary Opeator for Rendering Result
             )}
           </Col>
             </Row>
-        </Container>
+        </div>
 
     )
 }

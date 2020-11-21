@@ -6,7 +6,6 @@ import { Col, Row, Container } from "react-bootstrap";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import PDFViewer from '../../components/PDFViewer/index';
-import PDFJSBackend from '../../backends/pdfjs';
 import ProfileCard from "../../components/ProfileCard";
 import { Form } from "react-bootstrap";
 import "./TeacherProfilePage.css"
@@ -65,7 +64,6 @@ function TeacherProfilePage() {
             <Row>
                 <Col md={4}>
                     <ProfileCard />
-                    {/* <PDFViewer /> */}
                 </Col>
 
                 <Col xs={12} md={4}>
@@ -113,7 +111,9 @@ function TeacherProfilePage() {
                 ))}
               </List>
             ) : (
+               <div>
               <h6 style={{ color: 'grey', marginTop: '20px' }} >No Results to Display</h6>
+              </div> 
               //  Terniary Opeator for Rendering Result
             )}
           </Col>
