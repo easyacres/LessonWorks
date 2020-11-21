@@ -1,6 +1,6 @@
 module.exports = {
     LessonsMain: require("./lessonsmain"),
-    AdminsMain: require("./adminsmain")
+    // AdminsMain: require("./adminsmain")
     // newAccount: require("./NewAccount"),
     // newLesson: require("./NewLesson"),
     // savedAccount: require("./SavedAccount"),
