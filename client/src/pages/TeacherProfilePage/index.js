@@ -6,7 +6,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import PDFViewer from '../../components/PDFViewer/index';
-import PDFJSBackend from '../../backends/pdfjs';
+// import PDFJSBackend from '../../backends/pdfjs';
 import "./TeacherProfilePage.css"
 import ProfileCard from "../../components/ProfileCard";
 import { Form } from "react-bootstrap";
@@ -65,7 +65,7 @@ function TeacherProfilePage() {
             <Row>
                 <Col size="md-3">
                     <ProfileCard />
-                    <PDFViewer />
+                    {/* <PDFViewer /> */}
                 </Col>
 
                 <Col size="md-4">

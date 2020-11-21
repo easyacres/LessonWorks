@@ -7,10 +7,10 @@ export default {
     //  Same naming as express routes.
   },
 
-  getAdminsMain: function() {
-    return axios.get("/api/adminmain");
-    //  Same naming as express routes.
-  },
+  // getAdminsMain: function() {
+  //   return axios.get("/api/adminmain");
+  //   //  Same naming as express routes.
+  // },
   // Gets the Lesson Only with the given id
   // getLessonOnly: function(id) {
   //   return axios.get("/api/lessonmain/" + id);
