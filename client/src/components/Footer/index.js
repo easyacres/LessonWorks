@@ -7,31 +7,22 @@ function Footer() {
         <footer className="footer">
             <div class="container">
                 <Row>
-
-
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-secondary" >
                         <p>(770)777-7777</p>
               
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 foot" >
-                    <h6><strong>Made with <i class="far fa-heart"></i></strong></h6>
+                    <h6><strong>Made with a Lesson Plan</strong></h6>
               
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-secondary" >
                     <p>contactus@lessonworks.com</p>
               
                     </div>
-                
                   
                 </Row>
 
-       
-
-               
-
             </div>
-
-
         </footer>
 
 

@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/Api";
 import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../../components/Grid";
+import { Col, Row, Container } from "react-bootstrap";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import PDFViewer from '../../components/PDFViewer/index';
+
 // import PDFJSBackend from '../../backends/pdfjs';
 import "./TeacherProfilePage.css"
+
 import ProfileCard from "../../components/ProfileCard";
 import { Form } from "react-bootstrap";
+import "./TeacherProfilePage.css"
 
 function TeacherProfilePage() {
 
@@ -61,17 +64,17 @@ function TeacherProfilePage() {
     };
     
     return (
-        <Container id="teacher-container">
+        <div id="teacher-container" class="container">
             <Row>
-                <Col size="md-3">
+                <Col md={4}>
                     <ProfileCard />
-                    {/* <PDFViewer /> */}
+
                 </Col>
 
-                <Col size="md-4">
-                    <h2 id="lessonTitle">Create Your own lesson </h2>
+                <Col xs={12} md={4}>
+                    <h1 id="lessonTitle">Create Lesson </h1>
                     <br />
-                    <Form>
+                    <Form style={{marginRight: '40px'}}>
                         <Input
                             onChange={handleInputChange}
                             name="title"
@@ -95,9 +98,9 @@ function TeacherProfilePage() {
                         </FormBtn>
                     </Form>
                 </Col>
-                <Col size="md-4 sm-12">
+                <Col xs={12} md={4}>
             
-              <h1>Lessons On My List</h1>
+              <h1 id="lessonTitle">My Lessons</h1>
             
             {lessonsmain.length ? (
               <List>
@@ -113,12 +116,14 @@ function TeacherProfilePage() {
                 ))}
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+               <div>
+              <h6 style={{ color: 'grey', marginTop: '20px' }} >No Results to Display</h6>
+              </div> 
               //  Terniary Opeator for Rendering Result
             )}
           </Col>
             </Row>
-        </Container>
+        </div>
 
     )
 }
