@@ -11,13 +11,14 @@
 
 ## User Story
 ```
-AS a user, I want to be able to 
-SO that 
+AS a teacher I want to be able to access lesson plans in a more organized and searchable fashion
+SO THAT I can add my own personal notes in those system lesson plans and not stay up so late
+SO THAT I can spend more time with my family and do a better job teaching.  
 ```
 
 ## Deployment
 
-
+[LessonWorks](https://lessonworks.herokuapp.com/)
 
 ## Contributing
 
