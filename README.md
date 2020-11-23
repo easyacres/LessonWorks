@@ -8,6 +8,8 @@
 
 ## Description
 
+![lesson](https://user-images.githubusercontent.com/65740432/100022558-63b1f380-2db1-11eb-85e6-a850ea73c29d.PNG)
+
 ## User Story
 ```
 AS a teacher I want to be able to access lesson plans in a more organized and searchable fashion
