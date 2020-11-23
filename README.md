@@ -1,7 +1,5 @@
 # LessonPlanFinder
 
-[Lesson Works](https://lessonworks.herokuapp.com/)
-
 ## Table of Contents
 - [Description](#description)
 - [User Story](#user-story)
