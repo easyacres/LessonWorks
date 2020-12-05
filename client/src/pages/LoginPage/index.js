@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom"
 import { Button, Navbar, Nav, Container, Row, Col } from "react-bootstrap"
 import "./LoginPage.css";
-import LoginForm from "../../components/LoginForm"
+import Login from "../../components/Auth/Login";
 
 function LoginPage() {
     return (
@@ -22,7 +22,7 @@ function LoginPage() {
                     <Row>
                         <Col size="md-12">
                             <h2 id="loginHeader">Lesson</h2><h2 id="loginHeader2">Works</h2>
-                            <LoginForm />
+                            <Login />
                         </Col>
                     </Row>
                 </Container>

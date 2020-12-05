@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap'
 import Header from '../../components/Landing/Header'
 import Widgets from '../../components/Landing/Widgets'
 import Widgets2 from '../../components/Landing/Widgets2'
-import Banner from '../../components/Landing/Banner'
+//import Banner from '../../components/Landing/Banner'
 import Module from '../../components/Landing/Module'
 import "./LandingPage.css";
 
