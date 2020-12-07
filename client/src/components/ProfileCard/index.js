@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import "./ProfileCard.css"
+import "./ProfileCard.css";
 
 function ProfileCard() {
     var shadow = {

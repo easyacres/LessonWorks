@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./NewAccountPage.css";
-import { Nav, Navbar, Button, NavLink } from 'react-bootstrap'
+import { Nav, Navbar, Button } from 'react-bootstrap'
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -60,48 +60,39 @@ return (
       <div>
         <section id="newAccount">
           <div id="layer2">
-        <Navbar className="loginNav">
-            <Nav className="justify-content-end">
-              <Button variant="outline-light" id="adminlogin">
-                <NavLink href="/login" id="navlink">
-                  Login
-            </NavLink>
-              </Button>
-            </Nav>
-          </Navbar>
+        <Navbar bg="light" variant="light">
+            <Navbar.Brand href="/"><h3 id="navHeader">Lesson</h3><h3 id="navHeader2">Works</h3></Navbar.Brand>
+              <Nav className="mr-auto">
+                <Nav.Link href="/login">Login</Nav.Link>
+                </Nav>
+              </Navbar>
         <div id="signup-container" className="container">
         <div className="row">
           <div className="col-md-12">
-            <h2 style={{ color: "white" }}>Create New Account</h2>
-            <Link to="/" className="btn-flat waves-effect">
+            <h2 style={{ color: "white" }}>Create A New Account</h2>
+            {/*<Link to="/" className="btn-flat waves-effect">
               <i className="material-icons left"></i> Back to
               home
-           </Link>
-            <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-              <h4>
-                <b>Register</b> below
-              </h4>
-              <p className="grey-text text-darken-1">
-                Already have an account? <Link to="/login">Log in</Link>
-              </p>
-            </div>
-            <form noValidate onSubmit={this.onSubmit}>
-              <div style={{ color: "white" }} className="input-field col s12">
-                <input
+            </Link>*/}
+            <div className="col s12" style={{ paddingLeft: "11.250px", color: "white" }}>
+            <form className="signup" noValidate onSubmit={this.onSubmit}>
+              <div style={{ paddingBottom: "10px", color: "white" }} className="form-group mt-8">
+                <label classname="label-control" style={{ paddingRight: "10px" }} htmlFor="firstName">First Name</label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.firstName}
                   error={errors.firstName}
                   id="firstName"
                   type="text"
                   className={classnames("", {
-                      invalid: errors.firstName
+                    invalid: errors.firstName
                   })}
-                />
-                <label htmlFor="firstName">First Name</label>
+                  />
                 <span className="red-text">{errors.firstName}</span>
               </div>
-              <div style={{ color: "white" }} className="input-field col s12">
-                <input
+              <div style={{ paddingBottom: "10px", paddingLeft: "8px", color: "white" }} className="form-group mt-8">
+                <label style={{ paddingRight: "10px" }} htmlFor="lastName">Last Name</label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.lasttName}
                   error={errors.lastName}
@@ -109,70 +100,72 @@ return (
                   type="text"
                   className={classnames("", {
                       invalid: errors.lastName
-                  })}
+                    })}
                 />
-                <label htmlFor="lastName">Last Name</label>
                 <span className="red-text">{errors.lastName}</span>
               </div>
-              <div style={{ color: "white" }} className="input-field col s12">
-                <input
+              <div style={{ paddingBottom: "10px", paddingLeft: "55px", color: "white" }} className="form-group mt-8">
+                <label style={{ paddingRight: "10px" }} htmlFor="email">Email</label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.email}
                   error={errors.email}
                   id="email"
                   type="email"
                   className={classnames("", {
-                      invalid: errors.email
+                    invalid: errors.email
                   })}
-                />
-                <label htmlFor="email">Email</label>
+                  />
                 <span className="red-text">{errors.email}</span>
               </div>
-              <div style={{ color: "white" }} className="input-field col s12">
-                <input
+              <div style={{ paddingBottom: "10px", paddingLeft: "22px", color: "white" }} className="form-group mt-8">
+                <label style={{ paddingRight: "10px" }} htmlFor="password">Password</label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.password}
                   error={errors.password}
                   id="password"
                   type="password"
                   className={classnames("", {
-                      invalid: errors.password
+                    invalid: errors.password
                   })}
                 />
-                <label htmlFor="password">Password</label>
                 <span className="red-text">{errors.password}</span>
               </div>
-              <div style={{ color: "white" }} className="input-field col s12">
-                <input
+              <div style={{paddingBottom: "10px", paddingRight: "40px", color: "white" }} className="form-group mt-8">
+                <label style={{ paddingRight: "10px" }} htmlFor="password2">Confirm Password</label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.password2}
                   error={errors.password2}
                   id="password2"
                   type="password"
                   className={classnames("", {
-                      invalid: errors.password2
+                    invalid: errors.password2
                   })}
-                />
-               <label htmlFor="password2">Confirm Password</label>
+                  />
                 <span className="red-text">{errors.password2}</span>
               </div>
-              <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+              <div className="col s12" style={{ paddingLeft: "140.250px" }}>
                 <button
                   style={{
+                    variant: "outline-light",
                     width: "150px",
-                    borderRadius: "3px",
+                    borderRadius: "100px",
                     letterSpacing: "1.5px",
                     marginTop: "1rem",
                     background: "#f9bc60",
+                    fontWeight: "bold",
                     color: "#001e1d"
                   }}
                   type="submit"
                   className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-                >
-                  <Link to="/login"> Sign up </Link>
+                  >
+                  <Link style={{ color: "white" }} to="/login"> Sign up </Link>
                 </button>
               </div>
             </form>
+              </div>
           </div>
           </div>
         </div>

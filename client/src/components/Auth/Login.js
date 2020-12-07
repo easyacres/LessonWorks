@@ -56,12 +56,8 @@ componentDidMount() {
 
     return (
       <div className="container">
-        <div style={{ marginTop: "4rem" }} className="row">
-          <div className="col s8 offset-s2">
-            <Link to="/" className="btn-flat waves-effect">
-              <i className="material-icons left"></i> Back to
-              home
-            </Link>
+        <div style={{ marginTop: "1rem" }} className="row">
+          <div className="col s10 offset-s2">
             <div className="col s12" style={{ paddingLeft: "11.250px", color: "black" }}>
               <h4>
                 <b>Login</b> below
@@ -70,49 +66,50 @@ componentDidMount() {
                 Don't have an account? <Link to="/newaccount">Register</Link>
               </p>
             </div>
-            <form noValidate onSubmit={this.onSubmit}>
-              <div className="input-field col s12" style={{ color: "white" }}>
-                <input
+            <form style={{ marginTop: "15px" }} noValidate onSubmit={this.onSubmit}>
+              <div className="input-field col s12" style={{ paddingLeft: "11.250px", paddingBottom: "10px", margin: "0px", color: "white" }}>
+                <label></label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.email}
                   error={errors.email}
                   id="email"
+                  placeholder="email"
                   type="email"
                   className={classnames("", {
                     invalid: errors.email || errors.emailnotfound
                   })}
                 />
-                
-                <label htmlFor="email">Email</label>
                 <span className="red-text">
                   {errors.email}
                   {errors.emailnotfound}
                 </span>
               </div>
-              <div className="input-field col s12" style={{ color: "white" }}>
-                <input
+              <div className="input-field col s12" style={{ paddingLeft: "11.250px", color: "white" }}>
+                <label></label>
+                <input style={{ borderRadius: "100px", padding: "15px", border: "none", fontWeight: "bold", fontSize: "15px" }}
                   onChange={this.onChange}
                   value={this.state.password}
                   error={errors.password}
                   id="password"
+                  placeholder="password"
                   type="password"
                   className={classnames("", {
                     invalid: errors.passowrd || errors.passwordincorrect
                   })}
                 />
-                <label htmlFor="password">Password</label>
                 <span className="red-text">
                   {errors.password}
                   {errors.passwordincorrect}
                 </span>
               </div>
-              <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+              <div className="col s12" style={{ paddingBottom: "10px", paddingLeft: "11.250px" }}>
                 <button 
                   style={{
                     variant: "outline-light",
                     fontWeight: "bold",
                     width: "150px",
-                    borderRadius: "3px",
+                    borderRadius: "100px",
                     letterSpacing: "1.5px",
                     marginTop: "1rem",
                     background: "#f9bc60",
@@ -121,7 +118,7 @@ componentDidMount() {
                   type="submit"
                   className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                 >
-                  <Link to="/teacherprofilepage"> Login </Link>
+                  <Link style={{ color: "white" }} to="/teacherprofile"> Login </Link>
                 </button>
               </div>
             </form>
