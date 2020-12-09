@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "react-bootstrap";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-//import PDFViewer from '../../components/PDFViewer/index';
-
-// import PDFJSBackend from '../../backends/pdfjs';
-import "./TeacherProfilePage.css"
-
 import ProfileCard from "../../components/ProfileCard";
 import { Form } from "react-bootstrap";
 import "./TeacherProfilePage.css"

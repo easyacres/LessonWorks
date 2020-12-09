@@ -14,7 +14,7 @@ function Widgets() {
                             width={95}
                             height={95}
                             alt="171x180"
-                            src="https://png.pngitem.com/pimgs/s/516-5162204_circle-hd-png-download.png" roundedCircle
+                            src="https://webcomicms.net/sites/default/files/clipart/152368/easy-use-152368-8151761.png" roundedCircle
                         />
                         <h6 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '28px', color: 'rgb(49, 49, 49)'}}>Easy to Use</h6>
                         <Figure.Caption style={{color: 'rgb(49, 49, 49)'}}>

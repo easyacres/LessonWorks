@@ -48,6 +48,8 @@ componentDidMount() {
       password: this.state.password
     };
 
+    console.log(userData);
+
     this.props.loginUser(userData);
   };
 
@@ -62,9 +64,7 @@ componentDidMount() {
               <h4>
                 <b>Login</b> below
               </h4>
-              <p className="grey-text text-darken-1">
-                Don't have an account? <Link to="/newaccount">Register</Link>
-              </p>
+              
             </div>
             <form style={{ marginTop: "15px" }} noValidate onSubmit={this.onSubmit}>
               <div className="input-field col s12" style={{ paddingLeft: "11.250px", paddingBottom: "10px", margin: "0px", color: "white" }}>
@@ -74,7 +74,7 @@ componentDidMount() {
                   value={this.state.email}
                   error={errors.email}
                   id="email"
-                  placeholder="email"
+                  placeholder="UserName"
                   type="email"
                   className={classnames("", {
                     invalid: errors.email || errors.emailnotfound
@@ -92,7 +92,7 @@ componentDidMount() {
                   value={this.state.password}
                   error={errors.password}
                   id="password"
-                  placeholder="password"
+                  placeholder="Password"
                   type="password"
                   className={classnames("", {
                     invalid: errors.passowrd || errors.passwordincorrect
@@ -107,7 +107,24 @@ componentDidMount() {
                 <button 
                   style={{
                     variant: "outline-light",
-                    fontWeight: "bold",
+                    fontWeight: "normal",
+                    width: "150px",
+                    borderRadius: "100px",
+                    letterSpacing: "1.5px",
+                    marginTop: "1rem",
+                    marginRight: ".5rem",
+                    background: "#f9bc60",
+                    color: "rgb(49, 49, 49)"
+                  }}
+                  type="submit"
+                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                >
+                  <Link style={{ color: "white" }} to="/newaccount"> Sign up </Link>
+                </button>
+                <button 
+                  style={{
+                    variant: "outline-light",
+                    fontWeight: "normal",
                     width: "150px",
                     borderRadius: "100px",
                     letterSpacing: "1.5px",
