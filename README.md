@@ -1,4 +1,4 @@
-# LessonPlanFinder
+# LessonWorks
 
 ## Table of Contents
 - [Description](#description)
@@ -11,6 +11,7 @@
 Lesson Works is a MERN (MongoDB, Express, React, & Nodejs) application that allows its users an efficient space to find, organize, and annotate their lesson plans.
 
 ![lesson](https://user-images.githubusercontent.com/65740432/100022558-63b1f380-2db1-11eb-85e6-a850ea73c29d.PNG)
+
 
 ## User Story
 ```
